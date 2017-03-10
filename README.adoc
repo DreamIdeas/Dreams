@@ -1,0 +1,12 @@
+= README
+
+== Installation
+  npm install
+
+
+== Démarrage du serveur
+  npm start
+
+
+== Accès au client
+  http://localhost

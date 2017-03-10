@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body {
+  margin: 0;
+  background: #ddd;
+}
+
+body, input {
+  font: 13px 'Lato', sans-serif;
+}
+
+
+
+
+
+form {
+  background: #0D47A1;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+}
+
+form input,
+form button {
+  margin: 10px;
+  line-height: 32px;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+form input {
+  font-weight: lighter;
+  width: calc(100% - 200px);
+  background: #1565C0;
+}
+
+form input::-webkit-input-placeholder { color: #64B5F6; }
+form input::-moz-placeholder { color: #64B5F6; }
+
+form button {
+  color: #64B5F6;
+  width: 160px;
+  letter-spacing: 0.1em;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 120ms;
+}
+
+form button:hover {
+  color: #fff;
+  background: #1565C0;
+}
+
+
+
+
+
+#messages {
+  list-style-type: none;
+  margin: 48px auto;
+  width: 600px;
+  padding: 0;
+  margin-bottom: 160px;
+}
+
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#messages li {
+  margin: 16px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1),
+              0 5px 10px rgba(0,0,0,0.2);
+  transition: all 300ms;
+}
+
+#messages li:last-child {
+  background: #fff;
+  animation-name: pop;
+  animation-duration: 120ms;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1),
+              0 10px 20px rgba(0,0,0,0.2);
+}
