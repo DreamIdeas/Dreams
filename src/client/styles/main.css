@@ -105,3 +105,17 @@ form button:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.1),
               0 10px 20px rgba(0,0,0,0.2);
 }
+
+
+
+
+.user {
+  background: #1565C0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1),
+              0 10px 20px rgba(0,0,0,0.2);
+
+  position: absolute;
+  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+}
